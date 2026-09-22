@@ -21,7 +21,7 @@ Pour changer l’adresse plus tard, modifier dans `index.html` :
 
 `action="https://formsubmit.co/contact@conciergeriedesophia.com"`
 
-Remplacer simplement `contact@conciergeriedesophia.com` par la nouvelle adresse.
+Remplacer simplement `contact@conciergeriedesophia.com` par la nouvelle adresse. 
 
 
 ## Page SEO ajoutée

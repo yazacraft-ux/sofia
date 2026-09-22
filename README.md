@@ -22,3 +22,8 @@ Pour changer l’adresse plus tard, modifier dans `index.html` :
 `action="https://formsubmit.co/hapiwai@gmail.com"`
 
 Remplacer simplement `hapiwai@gmail.com` par la nouvelle adresse.
+
+
+## Page SEO ajoutée
+
+`/conciergerie-airbnb-saint-dizier/` — page locale optimisée pour les recherches liées à la conciergerie Airbnb à Saint-Dizier.

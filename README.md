@@ -13,15 +13,15 @@ Site statique prêt pour GitHub Pages.
 
 Le formulaire utilise FormSubmit et envoie actuellement vers :
 
-`hapiwai@gmail.com`
+`contact@conciergeriedesophia.com`
 
-À la première soumission, FormSubmit enverra un email de confirmation à cette adresse. Il faut cliquer sur le lien d’activation une seule fois.
+À la première soumission après ce changement, FormSubmit enverra un email de confirmation à `contact@conciergeriedesophia.com`. Il faut cliquer sur le lien d’activation une seule fois pour autoriser les prochains formulaires.
 
 Pour changer l’adresse plus tard, modifier dans `index.html` :
 
-`action="https://formsubmit.co/hapiwai@gmail.com"`
+`action="https://formsubmit.co/contact@conciergeriedesophia.com"`
 
-Remplacer simplement `hapiwai@gmail.com` par la nouvelle adresse.
+Remplacer simplement `contact@conciergeriedesophia.com` par la nouvelle adresse.
 
 
 ## Page SEO ajoutée

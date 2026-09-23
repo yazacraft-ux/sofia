@@ -1,10 +1,10 @@
 # La Conciergerie de Sophia
 
-Site statique prêt pour GitHub Pages.
+Site statique prêt pour GitHub Pages
 
 ## Mise en ligne
 
-1. Dézipper le dossier.
+1. Dézipper le dossier. 
 2. Envoyer tous les fichiers à la racine du dépôt GitHub.
 3. Dans GitHub : Settings → Pages → Deploy from a branch → `main` / root.
 4. Le fichier `CNAME` contient déjà `concergeriedesophia.com`.

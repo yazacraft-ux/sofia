@@ -32,3 +32,8 @@ Remplacer simplement `contact@conciergeriedesophia.com` par la nouvelle adresse.
 ## Page contact
 
 La page `/contact/` affiche l’email `contact@conciergeriedesophia.com`, le téléphone `+33695773646` et un formulaire de contact.
+
+
+## Variante d'accueil brandée
+
+Une variante expérimentale est disponible dans `/exemple/`. Elle ne remplace pas l'accueil actuel et est marquée `noindex` tant qu'elle n'est pas validée.

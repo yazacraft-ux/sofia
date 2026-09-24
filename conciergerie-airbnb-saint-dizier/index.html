@@ -54,7 +54,7 @@
     <a class="mobile-contact-icon" href="../contact/" aria-label="Contact">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="m4 6 8 7 8-7"/></svg>
     </a>
-    <a class="button button-small" href="#contact">Confier mon logement</a>
+    <a class="button button-small" href="../contact/">Confier mon logement</a>
   </header>
 
   <main id="top">
@@ -64,7 +64,7 @@
         <h1>Votre Airbnb à Saint-Dizier, <em>géré avec soin.</em></h1>
         <p class="hero-lead">Propriétaire à Saint-Dizier ? Déléguez la gestion quotidienne de votre location courte durée : voyageurs, ménage, linge, préparation du logement et suivi.</p>
         <div class="hero-actions">
-          <a class="button" href="#contact">Confier mon logement</a>
+          <a class="button" href="../contact/">Confier mon logement</a>
           <a class="text-link" href="#services-local">Voir les services <span aria-hidden="true">→</span></a>
         </div>
         <div class="local-proof-row">
@@ -174,40 +174,16 @@
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="contact-copy">
-        <div class="eyebrow">Propriétaire à Saint-Dizier ?</div>
-        <h2>Parlons de ton logement.</h2>
-        <p>Envoie-nous quelques informations sur ton bien. Nous te recontactons pour étudier la gestion la plus adaptée à ta location courte durée.</p>
-        <div class="contact-points">
-          <div><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Première prise de contact sans engagement</span></div>
-          <div><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Étude personnalisée du logement</span></div>
-          <div><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Gestion complète ou sur mesure</span></div>
+    
+    <section class="section saint-dizier-contact-cta">
+      <div class="saint-dizier-contact-inner">
+        <div>
+          <div class="eyebrow">Propriétaire à Saint-Dizier ?</div>
+          <h2>Parlons de ton logement.</h2>
+          <p>Tu souhaites nous confier ton logement ou simplement échanger sur ton projet ? Retrouve toutes nos coordonnées et notre formulaire sur la page Contact.</p>
         </div>
+        <a class="button" href="../contact/">Confier mon logement <span aria-hidden="true">→</span></a>
       </div>
-
-      <form class="contact-form" action="https://formsubmit.co/contact@conciergeriedesophia.com" method="POST">
-        <input type="hidden" name="_subject" value="Demande Conciergerie Airbnb Saint-Dizier">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://conciergeriedesophia.com/merci.html">
-        <input type="hidden" name="Page" value="Conciergerie Airbnb Saint-Dizier">
-        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
-        <input type="hidden" name="_captcha" value="false">
-        <div class="field-row">
-          <label><span>Nom *</span><input type="text" name="Nom" placeholder="Ton nom" required autocomplete="name"></label>
-          <label><span>Téléphone *</span><input type="tel" name="Téléphone" placeholder="06 00 00 00 00" required autocomplete="tel"></label>
-        </div>
-        <label><span>Email *</span><input type="email" name="Email" placeholder="ton@email.com" required autocomplete="email"></label>
-        <div class="field-row">
-          <label><span>Ville du logement *</span><input type="text" name="Ville du logement" value="Saint-Dizier" required></label>
-          <label><span>Type de logement</span><select name="Type de logement"><option value="">Sélectionner</option><option>Appartement</option><option>Maison</option><option>Villa</option><option>Studio</option><option>Autre</option></select></label>
-        </div>
-        <label><span>Lien de l’annonce <small>(facultatif)</small></span><input type="url" name="Lien de l'annonce" placeholder="https://airbnb.com/..."></label>
-        <label><span>Ton besoin</span><textarea name="Message" rows="5" placeholder="Parle-nous rapidement de ton logement et de ce que tu souhaites déléguer."></textarea></label>
-        <label class="checkbox"><input type="checkbox" required><span>J’accepte d’être recontacté au sujet de ma demande.</span></label>
-        <button class="button button-full" type="submit">Recevoir une estimation <span aria-hidden="true">→</span></button>
-        <p class="form-note">Tes informations sont utilisées uniquement pour répondre à ta demande.</p>
-      </form>
     </section>
   </main>
 

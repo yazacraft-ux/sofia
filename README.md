@@ -27,3 +27,8 @@ Remplacer simplement `contact@conciergeriedesophia.com` par la nouvelle adresse.
 ## Page SEO ajoutée
 
 `/conciergerie-airbnb-saint-dizier/` — page locale optimisée pour les recherches liées à la conciergerie Airbnb à Saint-Dizier.
+
+
+## Page contact
+
+La page `/contact/` affiche l’email `contact@conciergeriedesophia.com`, le téléphone `+33695773646` et un formulaire de contact.

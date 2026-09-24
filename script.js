@@ -48,6 +48,10 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
       stagger: true
     },
     {
+      selector: ".home-cta-banner .cta-banner",
+      mode: "up"
+    },
+    {
       selector: ".contact-copy",
       mode: "left"
     },

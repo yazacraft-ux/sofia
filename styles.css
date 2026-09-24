@@ -836,3 +836,208 @@ footer a{text-decoration:none}footer a:hover{text-decoration:underline}
     width:100%;
   }
 }
+
+
+/* =========================================================
+   ANIMATIONS PREMIUM — aucune modification de contenu
+   ========================================================= */
+
+html{
+  scroll-behavior:smooth;
+}
+
+/* Apparition au scroll */
+.reveal-on-scroll{
+  opacity:0;
+  transform:translateY(24px);
+  transition:
+    opacity .72s cubic-bezier(.22,1,.36,1),
+    transform .72s cubic-bezier(.22,1,.36,1);
+  will-change:opacity,transform;
+}
+
+.reveal-on-scroll.reveal-left{
+  transform:translateX(-26px);
+}
+
+.reveal-on-scroll.reveal-right{
+  transform:translateX(26px);
+}
+
+.reveal-on-scroll.is-visible{
+  opacity:1;
+  transform:translate3d(0,0,0);
+}
+
+/* Stagger léger pour les groupes */
+.reveal-delay-1{transition-delay:.07s}
+.reveal-delay-2{transition-delay:.14s}
+.reveal-delay-3{transition-delay:.21s}
+.reveal-delay-4{transition-delay:.28s}
+
+/* Header : entrée très légère */
+.site-header{
+  animation:headerEnter .7s cubic-bezier(.22,1,.36,1) both;
+}
+
+@keyframes headerEnter{
+  from{
+    opacity:0;
+    transform:translateY(-12px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* Hero : mouvement discret du visuel existant */
+.hero-visual .logo-card{
+  animation:heroFloat 6.5s ease-in-out infinite;
+  transform-origin:center;
+}
+
+@keyframes heroFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+}
+
+/* Reflet très subtil sur le bloc logo */
+.logo-card::before{
+  animation:softOrbit 14s linear infinite;
+}
+
+@keyframes softOrbit{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+
+/* Boutons : micro-interaction */
+.button{
+  position:relative;
+  overflow:hidden;
+}
+
+.button::after{
+  content:"";
+  position:absolute;
+  top:-35%;
+  left:-55%;
+  width:34%;
+  height:170%;
+  transform:rotate(18deg);
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.16),
+    transparent
+  );
+  transition:left .55s cubic-bezier(.22,1,.36,1);
+  pointer-events:none;
+}
+
+.button:hover::after{
+  left:125%;
+}
+
+/* Cards : interaction plus vivante sans changer le design */
+.service-card,
+.process-card,
+.direct-contact-card,
+.contact-form{
+  transition:
+    transform .28s cubic-bezier(.22,1,.36,1),
+    box-shadow .28s ease,
+    border-color .28s ease;
+}
+
+.service-card:hover,
+.process-card:hover,
+.direct-contact-card:hover{
+  transform:translateY(-5px);
+}
+
+/* Icônes : petit mouvement au hover */
+.service-card .icon,
+.direct-contact-icon{
+  transition:
+    transform .28s cubic-bezier(.22,1,.36,1),
+    background .28s ease;
+}
+
+.service-card:hover .icon,
+.direct-contact-card:hover .direct-contact-icon{
+  transform:translateY(-2px) scale(1.04);
+}
+
+/* Liens : flèche légèrement animée */
+.text-link span,
+.direct-contact-action{
+  transition:transform .24s cubic-bezier(.22,1,.36,1);
+}
+
+.text-link:hover span{
+  display:inline-block;
+  transform:translateX(4px);
+}
+
+/* Ligne décorative / eyebrow */
+.eyebrow{
+  position:relative;
+}
+
+.eyebrow::after{
+  content:"";
+  display:inline-block;
+  width:0;
+  height:1px;
+  margin-left:9px;
+  vertical-align:middle;
+  background:currentColor;
+  opacity:.5;
+  animation:eyebrowLine .8s .25s cubic-bezier(.22,1,.36,1) forwards;
+}
+
+@keyframes eyebrowLine{
+  to{width:28px}
+}
+
+/* Formulaire : focus un peu plus premium */
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+  transition:
+    border-color .22s ease,
+    box-shadow .22s ease,
+    transform .22s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+  transform:translateY(-1px);
+}
+
+/* Footer */
+footer{
+  transition:opacity .6s ease,transform .6s ease;
+}
+
+/* Respecte l’accessibilité */
+@media (prefers-reduced-motion: reduce){
+  *,
+  *::before,
+  *::after{
+    scroll-behavior:auto !important;
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+  }
+
+  .reveal-on-scroll,
+  .reveal-on-scroll.reveal-left,
+  .reveal-on-scroll.reveal-right{
+    opacity:1 !important;
+    transform:none !important;
+  }
+}
